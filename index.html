@@ -1,0 +1,23 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>Options Paper Desk (paper trading simulation)</title>
+<style>html,body{margin:0;height:100%;background:#0f1115;color:#e6e6e6;font-family:system-ui,sans-serif}
+#bar{padding:6px 14px;font-size:12px;background:#1b1f27}#f{border:0;width:100%;height:calc(100% - 30px)}</style></head>
+<body><div id=bar>PAPER TRADING SIMULATION - no real money. Quotes delayed ~15 min (Yahoo Finance). Snapshot published by the
+GitHub Actions engine every ~3 min during market hours; this page re-checks every 60 s. <span id=st>loading...</span></div>
+<iframe id=f title="dashboard"></iframe>
+<script>
+const OWNER="Neoo-Blue", REPO="options-paper-desk", PATH="docs/dashboard.html";
+async function get(){
+  // GitHub API first (not CDN-cached); raw.githubusercontent.com (cached up to ~5 min) as fallback.
+  try{const r=await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}?ref=main`,
+        {headers:{Accept:"application/vnd.github.raw+json"},cache:"no-store"}); if(r.ok) return [await r.text(),"api"];}catch(e){}
+  const r=await fetch(`https://raw.githubusercontent.com/${OWNER}/${REPO}/main/${PATH}?t=${Date.now()}`,{cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status); return [await r.text(),"raw"];
+}
+async function load(){
+  try{const [h,src]=await get(); document.getElementById("f").srcdoc=h.replace(/<meta http-equiv=refresh[^>]*>/i,"");
+      document.getElementById("st").textContent="| fetched "+new Date().toLocaleTimeString()+" via "+src;}
+  catch(e){document.getElementById("st").textContent="| fetch failed: "+e.message+" (retrying)";}
+}
+load(); setInterval(load,60000);
+</script></body></html>
