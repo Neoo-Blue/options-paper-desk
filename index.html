@@ -3,7 +3,7 @@
 <style>html,body{margin:0;height:100%;background:#0f1115;color:#e6e6e6;font-family:system-ui,sans-serif}
 #bar{padding:6px 14px;font-size:12px;background:#1b1f27}#f{border:0;width:100%;height:calc(100% - 30px)}</style></head>
 <body><div id=bar>PAPER TRADING SIMULATION - no real money. Quotes delayed ~15 min (Yahoo Finance). Snapshot published by the
-GitHub Actions engine every ~3 min during market hours; this page re-checks every 60 s. <span id=st>loading...</span></div>
+GitHub Actions engine every ~3 min during market hours; this page re-checks every 2 min. <span id=st>loading...</span></div>
 <iframe id=f title="dashboard"></iframe>
 <script>
 const OWNER="Neoo-Blue", REPO="options-paper-desk", PATH="docs/dashboard.html";
@@ -19,5 +19,5 @@ async function load(){
       document.getElementById("st").textContent="| fetched "+new Date().toLocaleTimeString()+" via "+src;}
   catch(e){document.getElementById("st").textContent="| fetch failed: "+e.message+" (retrying)";}
 }
-load(); setInterval(load,60000);
+load(); setInterval(load,120000);
 </script></body></html>
