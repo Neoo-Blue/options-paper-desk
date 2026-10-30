@@ -141,3 +141,6 @@
 2026-10-30 13:05:05,197 WARNING MISSED CHECKS: no engine iteration from 2026-10-30 14:08:12 ET to 2026-10-30 16:05:04 ET (7012s wall, 6707s of market time, expected <= 180s; monotonic 21.9 s; open positions: ['PLTR261030P00180000']). Box/process likely paused.
 2026-10-30 13:05:05,785 INFO PAPER EXPIRE PLTR261030P00180000 @ 0.0000 fees $0.00 proceeds $0.00 P&L $-8.04 | expired; underlying close 184.09 vs strike 180.0 | cash now $28.78
 # --- engine moved to GitHub Actions (timestamps below carry their zone) ---
+2026-10-30 16:47:15 EDT INFO runner: synced checkout to origin/main e469028
+2026-10-30 16:47:15 EDT INFO runner start (PAPER ONLY, GitHub Actions). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $28.78, positions 0, full_stop=False; outside session window: one iteration then exit
+2026-10-30 16:47:15 EDT INFO runner exit: cash $28.78, positions 0
