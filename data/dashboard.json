@@ -1,0 +1,17 @@
+{
+ "generated": "2026-10-30T16:45:19.957099-04:00",
+ "label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
+ "stats": {
+  "equity": 28.78,
+  "cash": 28.78,
+  "pnl": -21.22,
+  "pnl_pct": -42.44,
+  "closed": 3,
+  "wins": 0,
+  "win_rate": 0.0,
+  "realized": -21.22,
+  "fees": 0.22,
+  "max_dd": 21.22,
+  "max_dd_pct": 42.44
+ }
+}

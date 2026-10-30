@@ -1,0 +1,6 @@
+yfinance==1.7.0
+curl_cffi==0.17.0
+pandas==3.1.0
+numpy==2.5.4
+requests==2.34.2
+Flask==3.1.3

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+# box-local runtime files
+data/*.pid
+data/engine.lock
+data/sync_status.json*
+data/*.bak-*
+logs/*
+!logs/engine-tail.log

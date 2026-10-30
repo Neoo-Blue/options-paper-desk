@@ -1,0 +1,49 @@
+# Paper-trading engine for short-dated options. PAPER ONLY: no broker, no real orders, no secrets.
+#
+# GitHub cron is UTC, may start 5-30+ min late and may skip runs, so several redundant starts are scheduled.
+# The concurrency group allows ONE running job (the only writer of data/state.json); later triggers wait
+# in the queue (a newer trigger replaces an older queued one) and start the moment the running job exits.
+# Each job pulls the latest committed state, runs until min(start + 5h40m, close + 15 min) ET, then exits.
+#
+# Starts (Mon-Fri), UTC -> ET:   EDT = UTC-4 (until Nov 1 2026)   EST = UTC-5 (from Nov 1 2026)
+#   13:10 13:40 14:10 14:40     ->  09:10-10:40 ET (EDT)           08:10-09:40 ET (EST)       morning job
+#   16:10 ... 18:40 every 30m   ->  12:10-14:40 ET (EDT)           11:10-13:40 ET (EST)       queue the afternoon job
+#   19:20 20:20                 ->  15:20/16:20 ET (EDT)           14:20/15:20 ET (EST)       safety net / settlement retry
+name: paper-engine
+
+on:
+  schedule:
+    - cron: "10,40 13,14 * * 1-5"
+    - cron: "10,40 16,17,18 * * 1-5"
+    - cron: "20 19,20 * * 1-5"
+  workflow_dispatch:
+
+concurrency:
+  group: paper-engine
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  engine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      TZ: America/New_York
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Unit tests
+        run: python -m unittest discover -s tests -q
+      - name: Run engine until hand-off time
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          python -u ci_runner.py
