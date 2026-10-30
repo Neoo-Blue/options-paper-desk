@@ -34,6 +34,7 @@ The engine runs in `.github/workflows/engine.yml` on GitHub-hosted runners, so i
 - **Persistence:** every 3 minutes and at exit the job commits `data/state.json`, `data/dashboard.json`,
   `docs/dashboard.html` (static dashboard snapshot) and `logs/engine-tail.log`. A rejected push is retried on top
   of the new `main` (the runner's data files win; it is their only writer).
+- **Public dashboard:** https://neoo-blue.github.io/options-paper-desk/ (GitHub Pages, `gh-pages` branch; loads `docs/dashboard.html` from `main`).
 - **Manual run:** Actions tab -> paper-engine -> Run workflow (or `gh workflow run engine.yml`).
 - **Missed checks** across hand-offs or runner delays are still recorded (`missed_checks` in the state).
 
