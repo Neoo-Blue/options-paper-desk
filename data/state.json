@@ -1552,8 +1552,8 @@
  },
  "next_id": 5,
  "status": {
-  "last_tick": "2026-11-02T15:58:57.856891-05:00",
-  "market_open": true,
+  "last_tick": "2026-11-02T16:05:29.561162-05:00",
+  "market_open": false,
   "signals": [
    {
     "ticker": "AMD",
@@ -1606,11 +1606,11 @@
   ],
   "last_data_update": "2026-11-02T15:58:58.143943-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-02T15:58:57.856891-05:00",
-  "last_loop_mono": 17364.052112428,
+  "last_loop_wall": "2026-11-02T16:05:29.561162-05:00",
+  "last_loop_mono": 17755.75638306,
   "pid": 2174,
   "quote_retry_n": 0,
-  "last_requested_sleep": 90,
+  "last_requested_sleep": 300,
   "proc_id": "852d7a2ab1fd"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
