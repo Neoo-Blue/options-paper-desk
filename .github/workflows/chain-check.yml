@@ -1,0 +1,17 @@
+# Manual check that a job's GITHUB_TOKEN can queue another workflow run (the mechanism paper-engine uses to
+# self-chain). It dispatches the read-only yahoo-check workflow; it never touches state or the engine.
+name: chain-check
+on:
+  workflow_dispatch:
+permissions:
+  actions: write
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - run: gh workflow run yahoo-check.yml --ref main && echo "dispatch accepted"
