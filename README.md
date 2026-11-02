@@ -35,6 +35,7 @@ The engine runs in `.github/workflows/engine.yml` on GitHub-hosted runners, so i
   `docs/dashboard.html` (static dashboard snapshot) and `logs/engine-tail.log`. A rejected push is retried on top
   of the new `main` (the runner's data files win; it is their only writer).
 - **Public dashboard:** https://neoo-blue.github.io/options-paper-desk/ (GitHub Pages, `gh-pages` branch; loads `docs/dashboard.html` from `main`).
+- **Self-chaining:** a job that hits its 5h40m cap while the session is still open queues the next run itself (`gh workflow run`, GITHUB_TOKEN, `actions: write`), so a full session does not depend on GitHub cron firing. No chaining on weekends, holidays, after the close, or after a run shorter than 30 min. If an expiry still needs the official close, the last job waits up to 90 min after the close.
 - **Manual run:** Actions tab -> paper-engine -> Run workflow (or `gh workflow run engine.yml`).
 - **Missed checks** across hand-offs or runner delays are still recorded (`missed_checks` in the state).
 

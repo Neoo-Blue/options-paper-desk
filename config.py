@@ -103,3 +103,7 @@ SYNC_STATUS_FILE = os.path.join(BASE_DIR, "data", "sync_status.json")  # box onl
 RUNNER_SYNC_EVERY_S = 180         # runner commits + pushes state at most this often (and at exit)
 RUNNER_MAX_JOB_S = 5 * 3600 + 40 * 60   # hand off before GitHub's 6 h job limit
 RUNNER_AFTER_CLOSE_MIN = 15       # keep running this long after the close (expiry settlement needs the official close)
+RUNNER_SETTLE_GRACE_MIN = 90      # last job keeps waiting up to close + this for the official close if an expiry is unsettled
+RUNNER_CHAIN_MIN_RUN_S = 1800     # self-chain only if this job ran at least this long (no rapid loops if a job keeps crashing)
+RUNNER_CHAIN_LEAD_MIN = 5         # self-chain only if the session window is still open this many minutes from now
+RUNNER_WORKFLOW_FILE = "engine.yml"

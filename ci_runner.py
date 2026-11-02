@@ -46,11 +46,46 @@ def pull_latest():
     log.info("runner: synced checkout to origin/main %s", git("rev-parse", "--short", "HEAD").stdout.strip())
 
 
+def session_end(d):
+    return datetime.combine(d, mc.close_time(d), ET) + timedelta(minutes=config.RUNNER_AFTER_CLOSE_MIN)
+
+
+def settlement_pending(eng, now):
+    """An open position has expired (expiry today after the close, or earlier) and is not settled yet."""
+    d = now.date()
+    after_close = now >= datetime.combine(d, mc.close_time(d), ET) if mc.is_trading_day(d) else True
+    return any(p["expiry"] < d.isoformat() or (p["expiry"] == d.isoformat() and after_close)
+               for p in eng.s["positions"])
+
+
+def should_chain(now, ran_s):
+    """Start the next run (self-chaining) when this job stops at its time cap while the session window is still
+    open. Never on weekends/holidays/after the close (deadline_for is None there), never after a short run."""
+    if ran_s < config.RUNNER_CHAIN_MIN_RUN_S:
+        return False
+    return deadline_for(now + timedelta(minutes=config.RUNNER_CHAIN_LEAD_MIN)) is not None
+
+
+def chain_next(reason):
+    """Queue the next run of this workflow. Uses the job's GITHUB_TOKEN (workflow_dispatch is the one event a
+    GITHUB_TOKEN may trigger). The concurrency group queues it until this job exits."""
+    if not os.environ.get("GH_TOKEN"):
+        log.warning("runner: cannot self-chain (%s): GH_TOKEN not set", reason)
+        return False
+    r = subprocess.run(["gh", "workflow", "run", config.RUNNER_WORKFLOW_FILE, "--ref", "main"],
+                       cwd=config.BASE_DIR, capture_output=True, text=True, timeout=60)
+    if r.returncode:
+        log.error("runner: self-chain failed (%s): %s", reason, (r.stderr or r.stdout).strip()[:300])
+        return False
+    log.info("runner: self-chained next run (%s)", reason)
+    return True
+
+
 def deadline_for(now):
     d = now.date()
     if not mc.is_trading_day(d):
         return None
-    end = datetime.combine(d, mc.close_time(d), ET) + timedelta(minutes=config.RUNNER_AFTER_CLOSE_MIN)
+    end = session_end(d)
     if now >= end:
         return None
     return min(now + timedelta(seconds=config.RUNNER_MAX_JOB_S), end)
@@ -131,8 +166,18 @@ def main():
              f"running until {dl:%Y-%m-%d %H:%M} ET" if dl else "outside session window: one iteration then exit")
     pub = Publisher(old_tail)
     hook = None if a.no_git else pub.publish
+    t0 = _time.monotonic()
     try:
         engine.run_loop(eng, once=dl is None, deadline=dl, on_iter=hook)
+        # Last job of the day: if an expiry still needs the official close, keep waiting for it a while.
+        now = datetime.now(ET)
+        if settlement_pending(eng, now) and mc.is_trading_day(now.date()):
+            grace = datetime.combine(now.date(), mc.close_time(now.date()), ET) + timedelta(minutes=config.RUNNER_SETTLE_GRACE_MIN)
+            cap = datetime.now(ET) + timedelta(seconds=config.RUNNER_MAX_JOB_S - (_time.monotonic() - t0))
+            until = min(grace, cap)
+            if now < until:
+                log.info("runner: expiry settlement pending; waiting for the official close until %s ET", f"{until:%H:%M}")
+                engine.run_loop(eng, deadline=until, on_iter=hook, stop_fn=lambda e, n: not settlement_pending(e, n))
     finally:
         log.info("runner exit: cash $%.2f, positions %d", eng.s["cash"], len(eng.s["positions"]))
         if a.no_git:
@@ -140,6 +185,10 @@ def main():
             pub.write_artifacts(eng)
         else:
             pub.publish(eng, datetime.now(ET), force=True)
+            now = datetime.now(ET)
+            if should_chain(now, _time.monotonic() - t0):
+                chain_next(f"time cap reached at {now:%H:%M} ET; session window open until "
+                           f"{session_end(now.date()):%H:%M} ET")
 
 
 if __name__ == "__main__":

@@ -517,10 +517,10 @@ def main():
     run_loop(eng, once=a.once)
 
 
-def run_loop(eng, once=False, deadline=None, on_iter=None):
+def run_loop(eng, once=False, deadline=None, on_iter=None, stop_fn=None):
     """The engine loop. deadline (aware datetime): return once the wall clock passes it (used by the GitHub
     Actions runner, which must hand off before the 6 h job limit). on_iter(eng, now): optional hook called after
-    every iteration (the runner uses it to commit and push state)."""
+    every iteration (the runner uses it to commit and push state). stop_fn(eng, now) -> True ends the loop early."""
     while True:
         now = datetime.now(ET)
         try:
@@ -537,7 +537,7 @@ def run_loop(eng, once=False, deadline=None, on_iter=None):
                 on_iter(eng, datetime.now(ET))
             except Exception:
                 log.exception("loop hook failed")
-        if once:
+        if once or (stop_fn and stop_fn(eng, datetime.now(ET))):
             break
         try:
             delay = eng.next_delay(datetime.now(ET))

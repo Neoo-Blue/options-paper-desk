@@ -4,6 +4,10 @@
 # The concurrency group allows ONE running job (the only writer of data/state.json); later triggers wait
 # in the queue (a newer trigger replaces an older queued one) and start the moment the running job exits.
 # Each job pulls the latest committed state, runs until min(start + 5h40m, close + 15 min) ET, then exits.
+# Self-chaining: a job that stops at its 5h40m cap while the session window is still open queues the next run
+# itself (`gh workflow run` with GITHUB_TOKEN), so coverage does not depend on cron. It never chains on
+# weekends/holidays, after the close, or after a short (<30 min) run. Extra or queued starts are harmless:
+# they wait for the running job, resume from the committed state, and exit after one check outside the session.
 #
 # Starts (Mon-Fri), UTC -> ET:   EDT = UTC-4 (until Nov 1 2026)   EST = UTC-5 (from Nov 1 2026)
 #   13:10 13:40 14:10 14:40     ->  09:10-10:40 ET (EDT)           08:10-09:40 ET (EST)       morning job
@@ -23,7 +27,8 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: write   # commit data/state.json
+  actions: write    # self-chain: queue the next run of this workflow
 
 jobs:
   engine:
@@ -31,6 +36,8 @@ jobs:
     timeout-minutes: 355
     env:
       TZ: America/New_York
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
     steps:
       - uses: actions/checkout@v5
         with:

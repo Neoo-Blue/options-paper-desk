@@ -28,5 +28,32 @@ class DeadlineTest(unittest.TestCase):
         self.assertIsNone(ci_runner.deadline_for(at(2026, 11, 26, 10, 0)))   # Thanksgiving
 
 
+class ChainTest(unittest.TestCase):
+    H = 3600
+
+    def test_chains_when_cap_hit_mid_session(self):
+        self.assertTrue(ci_runner.should_chain(at(2026, 11, 3, 15, 15), 5.6 * self.H))
+        self.assertTrue(ci_runner.should_chain(at(2026, 11, 3, 13, 50), 5.6 * self.H))
+
+    def test_no_chain_after_close_weekend_holiday(self):
+        self.assertFalse(ci_runner.should_chain(at(2026, 11, 3, 16, 15), 5.6 * self.H))
+        self.assertFalse(ci_runner.should_chain(at(2026, 11, 3, 16, 12), 5.6 * self.H))   # < 5 min left
+        self.assertFalse(ci_runner.should_chain(at(2026, 11, 7, 12, 0), 5.6 * self.H))    # Saturday
+        self.assertFalse(ci_runner.should_chain(at(2026, 11, 26, 12, 0), 5.6 * self.H))   # Thanksgiving
+        self.assertFalse(ci_runner.should_chain(at(2026, 11, 27, 13, 12), 5.6 * self.H))  # early close 13:00 (+15)
+
+    def test_no_chain_after_short_run(self):
+        self.assertFalse(ci_runner.should_chain(at(2026, 11, 3, 12, 0), 60))
+
+    def test_settlement_pending(self):
+        class E:
+            s = {"positions": [{"expiry": "2026-11-03"}]}
+        self.assertFalse(ci_runner.settlement_pending(E, at(2026, 11, 3, 15, 0)))
+        self.assertTrue(ci_runner.settlement_pending(E, at(2026, 11, 3, 16, 5)))
+        self.assertTrue(ci_runner.settlement_pending(E, at(2026, 11, 4, 9, 0)))
+        E.s = {"positions": [{"expiry": "2026-11-06"}]}
+        self.assertFalse(ci_runner.settlement_pending(E, at(2026, 11, 3, 16, 5)))
+
+
 if __name__ == "__main__":
     unittest.main()
