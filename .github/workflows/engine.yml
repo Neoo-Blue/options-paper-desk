@@ -9,17 +9,20 @@
 # weekends/holidays, after the close, or after a short (<30 min) run. Extra or queued starts are harmless:
 # they wait for the running job, resume from the committed state, and exit after one check outside the session.
 #
-# Starts (Mon-Fri), UTC -> ET:   EDT = UTC-4 (until Nov 1 2026)   EST = UTC-5 (from Nov 1 2026)
-#   13:10 13:40 14:10 14:40     ->  09:10-10:40 ET (EDT)           08:10-09:40 ET (EST)       morning job
-#   16:10 ... 18:40 every 30m   ->  12:10-14:40 ET (EDT)           11:10-13:40 ET (EST)       queue the afternoon job
-#   19:20 20:20                 ->  15:20/16:20 ET (EDT)           14:20/15:20 ET (EST)       safety net / settlement retry
+# Starts (Mon-Fri), times in America/New_York (GitHub's `timezone` key, so DST is handled by GitHub):
+#   09:07 09:22 09:37 09:52            morning job (redundant starts; extras just queue)
+#   12:07 ... 14:37 every 30 min       backup in case the morning job died (normally replaced by the self-chain)
+#   16:25                              after-close pass: settles expirations if needed, then exits
 name: paper-engine
 
 on:
   schedule:
-    - cron: "10,40 13,14 * * 1-5"
-    - cron: "10,40 16,17,18 * * 1-5"
-    - cron: "20 19,20 * * 1-5"
+    - cron: "7,22,37,52 9 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "7,37 12,13,14 * * 1-5"
+      timezone: "America/New_York"
+    - cron: "25 16 * * 1-5"
+      timezone: "America/New_York"
   workflow_dispatch:
 
 concurrency:
