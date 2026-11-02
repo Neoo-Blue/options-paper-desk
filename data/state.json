@@ -2,8 +2,33 @@
  "version": 1,
  "created": "2026-10-28T01:22:42.639341-04:00",
  "start_cash": 50.0,
- "cash": 28.78,
- "positions": [],
+ "cash": 22.74,
+ "positions": [
+  {
+   "id": 4,
+   "symbol": "F261106C00013000",
+   "underlying": "F",
+   "kind": "call",
+   "strike": 13.0,
+   "expiry": "2026-11-06",
+   "qty": 1,
+   "entry_price": 0.06,
+   "entry_fees": {
+    "commission": 0.0,
+    "orf_occ": 0.04,
+    "cat": 0.0,
+    "total": 0.04
+   },
+   "entry_cost": 6.04,
+   "entry_time": "2026-11-02T11:10:03.707923-05:00",
+   "entry_reason": "F +1.09% from open, last 12.54 vs VWAP 12.4896 EMA20 12.516 (bar 2026-11-02T11:10:00-05:00)",
+   "mark_bid": 0.05,
+   "mark_ask": 0.06,
+   "mark_time": "2026-11-02T11:13:09.594210-05:00",
+   "quote_ok": true,
+   "fetch_failures": 0
+  }
+ ],
  "trades": [
   {
    "id": 1,
@@ -158,6 +183,33 @@
    "entry_cost": 8.04,
    "entry_time": "2026-10-30T10:17:04.403958-04:00",
    "reason": "expired; underlying close 184.09 vs strike 180.0"
+  },
+  {
+   "id": 4,
+   "time": "2026-11-02T11:10:03.707923-05:00",
+   "action": "BUY",
+   "symbol": "F261106C00013000",
+   "underlying": "F",
+   "kind": "call",
+   "strike": 13.0,
+   "expiry": "2026-11-06",
+   "qty": 1,
+   "price": 0.06,
+   "fees": 0.04,
+   "fee_detail": {
+    "commission": 0.0,
+    "orf_occ": 0.04,
+    "cat": 0.0,
+    "total": 0.04
+   },
+   "cash_flow": -6.04,
+   "reason": "F +1.09% from open, last 12.54 vs VWAP 12.4896 EMA20 12.516 (bar 2026-11-02T11:10:00-05:00)",
+   "quote": {
+    "bid": 0.05,
+    "ask": 0.06,
+    "volume": 13010.0,
+    "oi": 7182.0
+   }
   }
  ],
  "equity_history": [
@@ -510,6 +562,21 @@
    "t": "2026-10-30T16:05:04.879323-04:00",
    "equity": 28.78,
    "cash": 28.78
+  },
+  {
+   "t": "2026-11-02T11:10:03.707923-05:00",
+   "equity": 27.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-02T11:11:39.252924-05:00",
+   "equity": 27.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-02T11:13:09.594210-05:00",
+   "equity": 27.69,
+   "cash": 22.74
   }
  ],
  "daily": {
@@ -524,11 +591,15 @@
   "2026-10-30": {
    "sod_equity": 36.82,
    "last_equity": 28.78
+  },
+  "2026-11-02": {
+   "sod_equity": 28.78,
+   "last_equity": 27.69
   }
  },
  "day": {
-  "date": "2026-10-30",
-  "sod_equity": 36.82,
+  "date": "2026-11-02",
+  "sod_equity": 28.78,
   "daily_cap_hit": false,
   "entries": 1
  },
@@ -539,80 +610,68 @@
   "F": "2026-10-30T10:17:04.403958-04:00",
   "PLTR": "2026-10-30T16:05:04.879323-04:00"
  },
- "next_id": 4,
+ "next_id": 5,
  "status": {
-  "last_tick": "2026-10-30T16:49:24.585246-04:00",
-  "market_open": false,
+  "last_tick": "2026-11-02T11:13:09.594210-05:00",
+  "market_open": true,
   "signals": [
    {
-    "ticker": "QQQ",
-    "open": 697.13,
-    "last": 694.24,
-    "vwap": 695.7508,
-    "ema": 695.6862,
-    "move_pct": -0.415,
-    "threshold_pct": 0.4,
-    "bar_time": "2026-10-30T10:17:00-04:00",
-    "side": "put",
-    "strength": 1.036397310471282
-   },
-   {
-    "ticker": "IWM",
-    "open": 282.22,
-    "last": 279.92,
-    "vwap": 281.6847,
-    "ema": 280.551,
-    "move_pct": -0.815,
-    "threshold_pct": 0.4,
-    "bar_time": "2026-10-30T10:17:00-04:00",
-    "side": "put",
-    "strength": 2.0374067952488026
-   },
-   {
-    "ticker": "PLTR",
-    "open": 193.765,
-    "last": 187.19,
-    "vwap": 189.4919,
-    "ema": 188.2931,
-    "move_pct": -3.393,
+    "ticker": "AMD",
+    "open": 510.65,
+    "last": 492.51,
+    "vwap": 504.4785,
+    "ema": 494.9103,
+    "move_pct": -3.552,
     "threshold_pct": 1.0,
-    "bar_time": "2026-10-30T10:17:00-04:00",
+    "bar_time": "2026-11-02T11:10:00-05:00",
     "side": "put",
-    "strength": 3.3932841168183847
+    "strength": 3.552332193807206
    },
    {
     "ticker": "SOFI",
-    "open": 17.07,
-    "last": 16.895,
-    "vwap": 17.0677,
-    "ema": 16.9501,
-    "move_pct": -1.025,
+    "open": 16.9775,
+    "last": 17.52,
+    "vwap": 17.3052,
+    "ema": 17.499,
+    "move_pct": 3.195,
     "threshold_pct": 1.0,
-    "bar_time": "2026-10-30T10:17:00-04:00",
-    "side": "put",
-    "strength": 1.025185941354223
+    "bar_time": "2026-11-02T11:10:00-05:00",
+    "side": "call",
+    "strength": 3.1954028153823755
+   },
+   {
+    "ticker": "F",
+    "open": 12.405,
+    "last": 12.54,
+    "vwap": 12.4896,
+    "ema": 12.516,
+    "move_pct": 1.088,
+    "threshold_pct": 1.0,
+    "bar_time": "2026-11-02T11:10:00-05:00",
+    "side": "call",
+    "strength": 1.0882727270281167
    },
    {
     "ticker": "NIO",
-    "open": 3.26,
-    "last": 3.2184,
-    "vwap": 3.2405,
-    "ema": 3.2292,
-    "move_pct": -1.276,
+    "open": 3.225,
+    "last": 3.265,
+    "vwap": 3.2482,
+    "ema": 3.2603,
+    "move_pct": 1.24,
     "threshold_pct": 1.0,
-    "bar_time": "2026-10-30T10:17:00-04:00",
-    "side": "put",
-    "strength": 1.2760732840206623
+    "bar_time": "2026-11-02T11:09:00-05:00",
+    "side": "call",
+    "strength": 1.2403163241694326
    }
   ],
-  "last_data_update": "2026-10-30T16:05:05.782342-04:00",
+  "last_data_update": "2026-11-02T11:13:09.850013-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-10-30T16:49:24.585246-04:00",
-  "last_loop_mono": 74050.505527609,
-  "pid": 433719,
+  "last_loop_wall": "2026-11-02T11:13:09.594210-05:00",
+  "last_loop_mono": 215.789431818,
+  "pid": 2174,
   "quote_retry_n": 0,
-  "last_requested_sleep": 300,
-  "proc_id": "b06fe40cb3e7"
+  "last_requested_sleep": 90,
+  "proc_id": "852d7a2ab1fd"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
  "missed_checks": [
@@ -747,6 +806,15 @@
    "open_positions": [
     "PLTR261030P00180000"
    ]
+  },
+  {
+   "start": "2026-10-30T16:49:24.585246-04:00",
+   "end": "2026-11-02T11:10:03.707923-05:00",
+   "seconds": 242439,
+   "market_seconds": 6004,
+   "expected_s": 300,
+   "monotonic_s": null,
+   "open_positions": []
   }
  ],
  "stale_periods": [

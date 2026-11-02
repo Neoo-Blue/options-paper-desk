@@ -7,64 +7,64 @@ td,th{border:1px solid #333;padding:4px 8px;font-size:13px;text-align:left} th{b
 pre{background:#000;padding:8px;font-size:11px;overflow:auto;max-height:300px}</style></head><body>
 <h2>Options Paper Desk <small>(PAPER TRADING SIMULATION - no real money, no broker)</small></h2>
 <div class=warn>Quotes delayed ~15 min (Yahoo Finance). Fills: buy at ask, sell at bid, Robinhood pass-through fees applied.</div>
-<p>Now 2026-10-30 16:49:29 ET | Market CLOSED | Last engine tick 2026-10-30 16:49:24 ET | Last data update 2026-10-30 16:05:05 ET | Page auto-refreshes every 30s<br>State source: local engine</p>
+<p>Now 2026-11-02 11:13:10 ET | Market OPEN | Last engine tick 2026-11-02 11:13:09 ET | Last data update 2026-11-02 11:13:09 ET | Page auto-refreshes every 30s<br>State source: engine on GitHub Actions</p>
 <div class=cards>
-<div class=card>Equity (liquidation value)<div class=big>$28.78</div></div>
-<div class=card>Cash<div class=big>$28.78</div></div>
-<div class=card>Total P&L (after spreads &amp; fees)<div class="big bad">$-21.22 (-42.4%)</div></div>
+<div class=card>Equity (liquidation value)<div class=big>$27.69</div></div>
+<div class=card>Cash<div class=big>$22.74</div></div>
+<div class=card>Total P&L (after spreads &amp; fees)<div class="big bad">$-22.31 (-44.6%)</div></div>
 <div class=card>Realized P&L<div class=big>$-21.22</div></div>
-<div class=card>Fees paid<div class=big>$0.22</div></div>
+<div class=card>Fees paid<div class=big>$0.26</div></div>
 <div class=card>Win rate<div class=big>0% (0/3)</div></div>
-<div class=card>Max drawdown<div class=big>$21.22 (42.4%)</div></div>
+<div class=card>Max drawdown<div class=big>$22.31 (44.6%)</div></div>
 </div>
-<h3>Risk status</h3><ul><li class="ok">Full stop: not triggered</li><li class="ok">Daily loss cap: not hit</li><li class="">Start-of-day equity $36.82; daily floor $31.30; entries today 1/3</li><li class="">Max per position: 40% of equity = $11.51; full-stop level $25.00</li></ul>
-<h3>Open positions</h3><table><tr><th>Contract</th><th>Type</th><th>Strike</th><th>Expiry</th><th>Entry (ask)</th><th>Entry cost incl. fees</th><th>Current bid</th><th>Net liq value</th><th>Unrealized</th><th>Quote time</th></tr><tr><td colspan=10>No open positions</td></tr></table>
+<h3>Risk status</h3><ul><li class="ok">Full stop: not triggered</li><li class="ok">Daily loss cap: not hit</li><li class="">Start-of-day equity $28.78; daily floor $24.46; entries today 1/3</li><li class="">Max per position: 40% of equity = $11.08; full-stop level $25.00</li></ul>
+<h3>Open positions</h3><table><tr><th>Contract</th><th>Type</th><th>Strike</th><th>Expiry</th><th>Entry (ask)</th><th>Entry cost incl. fees</th><th>Current bid</th><th>Net liq value</th><th>Unrealized</th><th>Quote time</th></tr><tr><td>F261106C00013000</td><td>call</td><td>13.0</td><td>2026-11-06</td><td>0.06</td><td>$6.04</td><td>0.05</td><td>$4.95</td><td>$-1.09</td><td>2026-11-02 11:13:09 ET</td></tr></table>
 <h3>Missed checks today (engine loop gaps &gt; 2x the 90s poll during market hours)</h3>
-<table><tr><th>Last check before gap</th><th>Next check</th><th>Gap</th><th>Market time missed</th><th>Open positions during gap</th></tr><tr><td>2026-10-30 14:08:12 ET</td><td>2026-10-30 16:05:04 ET</td><td>116.9 min</td><td>111.8 min</td><td>PLTR261030P00180000</td></tr><tr><td>2026-10-30 10:54:36 ET</td><td>2026-10-30 14:02:11 ET</td><td>187.6 min</td><td>187.6 min</td><td>PLTR261030P00180000</td></tr><tr><td>2026-10-30 10:21:38 ET</td><td>2026-10-30 10:50:04 ET</td><td>28.4 min</td><td>28.4 min</td><td>PLTR261030P00180000</td></tr><tr><td>2026-10-30 01:27:41 ET</td><td>2026-10-30 10:17:04 ET</td><td>529.4 min</td><td>47.1 min</td><td>F261030C00012500</td></tr></table>
+<table><tr><th>Last check before gap</th><th>Next check</th><th>Gap</th><th>Market time missed</th><th>Open positions during gap</th></tr><tr><td>2026-10-30 16:49:24 ET</td><td>2026-11-02 11:10:03 ET</td><td>4040.7 min</td><td>100.1 min</td><td>none</td></tr></table>
 <h3>Stale-quote periods today (open position without a good quote &gt; 3 min)</h3>
 <table><tr><th>Contract</th><th>Last good quote</th><th>Recovered / closed</th><th>Duration</th><th>Failed fetches</th><th>Ended by</th></tr><tr><td colspan=6 class=ok>No stale-quote periods today</td></tr></table>
-<h3>Trade log</h3><table><tr><th>Time</th><th>Action</th><th>Contract</th><th>Expiry</th><th>Price</th><th>Fees</th><th>Cash flow</th><th>P&L</th><th>Reason</th></tr><tr><td>2026-10-30 16:05:04 ET</td><td>EXPIRE</td><td>PLTR261030P00180000</td><td>2026-10-30</td><td>0.0</td><td>$0.00</td><td>$+0.00</td><td>$-8.04</td><td>expired; underlying close 184.09 vs strike 180.0</td></tr><tr><td>2026-10-30 10:17:04 ET</td><td>BUY</td><td>PLTR261030P00180000</td><td>2026-10-30</td><td>0.08</td><td>$0.04</td><td>$-8.04</td><td></td><td>PLTR -3.39% from open, last 187.19 vs VWAP 189.4919 EMA20 188.2931 (bar 2026-10-30T10:17:00-04:00)</td></tr><tr><td>2026-10-30 10:17:04 ET</td><td>SELL</td><td>F261030C00012500</td><td>2026-10-30</td><td>0.02</td><td>$0.05</td><td>$+1.95</td><td>$-3.09</td><td>stop loss -61%</td></tr><tr><td>2026-10-29 10:30:27 ET</td><td>BUY</td><td>F261030C00012500</td><td>2026-10-30</td><td>0.05</td><td>$0.04</td><td>$-5.04</td><td></td><td>F +3.40% from open, last 12.1699 vs VWAP 12.0181 EMA20 12.1431 (bar 2026-10-29T10:30:00-04:00)</td></tr><tr><td>2026-10-28 11:10:13 ET</td><td>SELL</td><td>AMD261028P00537500</td><td>2026-10-28</td><td>0.07</td><td>$0.05</td><td>$+6.95</td><td>$-10.09</td><td>daily loss cap - liquidating</td></tr><tr><td>2026-10-28 10:26:09 ET</td><td>BUY</td><td>AMD261028P00537500</td><td>2026-10-28</td><td>0.17</td><td>$0.04</td><td>$-17.04</td><td></td><td>AMD -1.77% from open, last 562.38 vs VWAP 564.4062 EMA20 562.385 (bar 2026-10-28T10:26:00-04:00)</td></tr></table>
-<h3>Latest signals</h3><ul><li>{&#x27;ticker&#x27;: &#x27;QQQ&#x27;, &#x27;open&#x27;: 697.13, &#x27;last&#x27;: 694.24, &#x27;vwap&#x27;: 695.7508, &#x27;ema&#x27;: 695.6862, &#x27;move_pct&#x27;: -0.415, &#x27;threshold_pct&#x27;: 0.4, &#x27;bar_time&#x27;: &#x27;2026-10-30T10:17:00-04:00&#x27;, &#x27;side&#x27;: &#x27;put&#x27;, &#x27;strength&#x27;: 1.036397310471282}</li><li>{&#x27;ticker&#x27;: &#x27;IWM&#x27;, &#x27;open&#x27;: 282.22, &#x27;last&#x27;: 279.92, &#x27;vwap&#x27;: 281.6847, &#x27;ema&#x27;: 280.551, &#x27;move_pct&#x27;: -0.815, &#x27;threshold_pct&#x27;: 0.4, &#x27;bar_time&#x27;: &#x27;2026-10-30T10:17:00-04:00&#x27;, &#x27;side&#x27;: &#x27;put&#x27;, &#x27;strength&#x27;: 2.0374067952488026}</li><li>{&#x27;ticker&#x27;: &#x27;PLTR&#x27;, &#x27;open&#x27;: 193.765, &#x27;last&#x27;: 187.19, &#x27;vwap&#x27;: 189.4919, &#x27;ema&#x27;: 188.2931, &#x27;move_pct&#x27;: -3.393, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-10-30T10:17:00-04:00&#x27;, &#x27;side&#x27;: &#x27;put&#x27;, &#x27;strength&#x27;: 3.3932841168183847}</li><li>{&#x27;ticker&#x27;: &#x27;SOFI&#x27;, &#x27;open&#x27;: 17.07, &#x27;last&#x27;: 16.895, &#x27;vwap&#x27;: 17.0677, &#x27;ema&#x27;: 16.9501, &#x27;move_pct&#x27;: -1.025, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-10-30T10:17:00-04:00&#x27;, &#x27;side&#x27;: &#x27;put&#x27;, &#x27;strength&#x27;: 1.025185941354223}</li><li>{&#x27;ticker&#x27;: &#x27;NIO&#x27;, &#x27;open&#x27;: 3.26, &#x27;last&#x27;: 3.2184, &#x27;vwap&#x27;: 3.2405, &#x27;ema&#x27;: 3.2292, &#x27;move_pct&#x27;: -1.276, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-10-30T10:17:00-04:00&#x27;, &#x27;side&#x27;: &#x27;put&#x27;, &#x27;strength&#x27;: 1.2760732840206623}</li></ul>
-<h3>Engine log (tail)</h3><pre>2026-10-29 12:41:55,937 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-29 12:43:28,063 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-29 12:44:58,260 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-29 12:46:28,501 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-29 13:20:08,468 WARNING MISSED CHECKS: no engine iteration from 2026-10-29 15:46:28 ET to 2026-10-29 16:20:08 ET (2020s wall, 812s of market time, expected &lt;= 180s; monotonic 70.1 s; open positions: [&#x27;F261030C00012500&#x27;]). Box/process likely paused.
-2026-10-29 15:06:58,156 INFO engine start (PAPER ONLY). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $34.87, positions 1, full_stop=False
-2026-10-30 07:17:04,914 WARNING MISSED CHECKS: no engine iteration from 2026-10-30 01:27:41 ET to 2026-10-30 10:17:04 ET (31762s wall, 2824s of market time, expected &lt;= 390s; monotonic 51.1 s; open positions: [&#x27;F261030C00012500&#x27;]). Box/process likely paused.
-2026-10-30 07:17:06,098 INFO New trading day 2026-10-30, start-of-day equity $36.82
-2026-10-30 07:17:06,100 INFO PAPER SELL F261030C00012500 @ 0.0200 fees $0.05 proceeds $1.95 P&amp;L $-3.09 | stop loss -61% | cash now $36.82
-2026-10-30 07:17:07,975 INFO skip PLTR261030P00185000 ask 0.42: cost $42.04 &gt; cash $36.82
-2026-10-30 07:17:07,975 INFO skip PLTR261030P00182500 ask 0.17: cost $17.04 &gt; 40% cap $14.73
-2026-10-30 07:17:07,976 INFO PAPER BUY PLTR261030P00180000 @ ask 0.08 (bid 0.07) fees $0.04 total cost $8.04 | PLTR -3.39% from open, last 187.19 vs VWAP 189.4919 EMA20 188.2931 (bar 2026-10-30T10:17:00-04:00) | cash now $28.78 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:17:08,000 INFO tick equity $35.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:18:38,283 INFO tick equity $36.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:20:08,538 INFO tick equity $34.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:21:38,744 INFO tick equity $34.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:50:05,128 WARNING MISSED CHECKS: no engine iteration from 2026-10-30 10:21:38 ET to 2026-10-30 10:50:04 ET (1706s wall, 1706s of market time, expected &lt;= 180s; monotonic 76.5 s; open positions: [&#x27;PLTR261030P00180000&#x27;]). Box/process likely paused.
-2026-10-30 07:50:05,839 INFO tick equity $37.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:51:36,155 INFO tick equity $35.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:53:06,443 INFO tick equity $36.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 07:54:36,669 INFO tick equity $34.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 11:02:11,324 WARNING MISSED CHECKS: no engine iteration from 2026-10-30 10:54:36 ET to 2026-10-30 14:02:11 ET (11255s wall, 11255s of market time, expected &lt;= 180s; monotonic 73.5 s; open positions: [&#x27;PLTR261030P00180000&#x27;]). Box/process likely paused.
-2026-10-30 11:02:12,034 INFO tick equity $33.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 11:03:42,388 INFO tick equity $33.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 11:05:12,722 INFO tick equity $34.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 11:06:42,936 INFO tick equity $35.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 11:08:13,148 INFO tick equity $38.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-30 13:05:05,197 WARNING MISSED CHECKS: no engine iteration from 2026-10-30 14:08:12 ET to 2026-10-30 16:05:04 ET (7012s wall, 6707s of market time, expected &lt;= 180s; monotonic 21.9 s; open positions: [&#x27;PLTR261030P00180000&#x27;]). Box/process likely paused.
-2026-10-30 13:05:05,785 INFO PAPER EXPIRE PLTR261030P00180000 @ 0.0000 fees $0.00 proceeds $0.00 P&amp;L $-8.04 | expired; underlying close 184.09 vs strike 180.0 | cash now $28.78
-# --- engine moved to GitHub Actions (timestamps below carry their zone) ---
-2026-10-30 16:47:15 EDT INFO runner: synced checkout to origin/main e469028
-2026-10-30 16:47:15 EDT INFO runner start (PAPER ONLY, GitHub Actions). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $28.78, positions 0, full_stop=False; outside session window: one iteration then exit
-2026-10-30 16:47:15 EDT INFO runner exit: cash $28.78, positions 0
-2026-10-30 13:49:24 PDT INFO runner start (PAPER ONLY, GitHub Actions). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $28.78, positions 0, full_stop=False; outside session window: one iteration then exit
-2026-10-30 13:49:24 PDT WARNING runner: push rejected (attempt 1): To https://github.com/Neoo-Blue/options-paper-desk.git
- ! [rejected]        HEAD -&gt; main (fetch first)
-error: failed to push some refs to &#x27;https://github.com/Neoo-Blue/options-paper-desk.git&#x27;
-hint: Up
-2026-10-30 13:49:29 PDT INFO runner: pushed state 2026-10-30 16:49 ET: cash $28.78, open 0
-2026-10-30 13:49:29 PDT INFO runner exit: cash $28.78, positions 0
+<h3>Trade log</h3><table><tr><th>Time</th><th>Action</th><th>Contract</th><th>Expiry</th><th>Price</th><th>Fees</th><th>Cash flow</th><th>P&L</th><th>Reason</th></tr><tr><td>2026-11-02 11:10:03 ET</td><td>BUY</td><td>F261106C00013000</td><td>2026-11-06</td><td>0.06</td><td>$0.04</td><td>$-6.04</td><td></td><td>F +1.09% from open, last 12.54 vs VWAP 12.4896 EMA20 12.516 (bar 2026-11-02T11:10:00-05:00)</td></tr><tr><td>2026-10-30 16:05:04 ET</td><td>EXPIRE</td><td>PLTR261030P00180000</td><td>2026-10-30</td><td>0.0</td><td>$0.00</td><td>$+0.00</td><td>$-8.04</td><td>expired; underlying close 184.09 vs strike 180.0</td></tr><tr><td>2026-10-30 10:17:04 ET</td><td>BUY</td><td>PLTR261030P00180000</td><td>2026-10-30</td><td>0.08</td><td>$0.04</td><td>$-8.04</td><td></td><td>PLTR -3.39% from open, last 187.19 vs VWAP 189.4919 EMA20 188.2931 (bar 2026-10-30T10:17:00-04:00)</td></tr><tr><td>2026-10-30 10:17:04 ET</td><td>SELL</td><td>F261030C00012500</td><td>2026-10-30</td><td>0.02</td><td>$0.05</td><td>$+1.95</td><td>$-3.09</td><td>stop loss -61%</td></tr><tr><td>2026-10-29 10:30:27 ET</td><td>BUY</td><td>F261030C00012500</td><td>2026-10-30</td><td>0.05</td><td>$0.04</td><td>$-5.04</td><td></td><td>F +3.40% from open, last 12.1699 vs VWAP 12.0181 EMA20 12.1431 (bar 2026-10-29T10:30:00-04:00)</td></tr><tr><td>2026-10-28 11:10:13 ET</td><td>SELL</td><td>AMD261028P00537500</td><td>2026-10-28</td><td>0.07</td><td>$0.05</td><td>$+6.95</td><td>$-10.09</td><td>daily loss cap - liquidating</td></tr><tr><td>2026-10-28 10:26:09 ET</td><td>BUY</td><td>AMD261028P00537500</td><td>2026-10-28</td><td>0.17</td><td>$0.04</td><td>$-17.04</td><td></td><td>AMD -1.77% from open, last 562.38 vs VWAP 564.4062 EMA20 562.385 (bar 2026-10-28T10:26:00-04:00)</td></tr></table>
+<h3>Latest signals</h3><ul><li>{&#x27;ticker&#x27;: &#x27;AMD&#x27;, &#x27;open&#x27;: 510.65, &#x27;last&#x27;: 492.51, &#x27;vwap&#x27;: 504.4785, &#x27;ema&#x27;: 494.9103, &#x27;move_pct&#x27;: -3.552, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-11-02T11:10:00-05:00&#x27;, &#x27;side&#x27;: &#x27;put&#x27;, &#x27;strength&#x27;: 3.552332193807206}</li><li>{&#x27;ticker&#x27;: &#x27;SOFI&#x27;, &#x27;open&#x27;: 16.9775, &#x27;last&#x27;: 17.52, &#x27;vwap&#x27;: 17.3052, &#x27;ema&#x27;: 17.499, &#x27;move_pct&#x27;: 3.195, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-11-02T11:10:00-05:00&#x27;, &#x27;side&#x27;: &#x27;call&#x27;, &#x27;strength&#x27;: 3.1954028153823755}</li><li>{&#x27;ticker&#x27;: &#x27;F&#x27;, &#x27;open&#x27;: 12.405, &#x27;last&#x27;: 12.54, &#x27;vwap&#x27;: 12.4896, &#x27;ema&#x27;: 12.516, &#x27;move_pct&#x27;: 1.088, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-11-02T11:10:00-05:00&#x27;, &#x27;side&#x27;: &#x27;call&#x27;, &#x27;strength&#x27;: 1.0882727270281167}</li><li>{&#x27;ticker&#x27;: &#x27;NIO&#x27;, &#x27;open&#x27;: 3.225, &#x27;last&#x27;: 3.265, &#x27;vwap&#x27;: 3.2482, &#x27;ema&#x27;: 3.2603, &#x27;move_pct&#x27;: 1.24, &#x27;threshold_pct&#x27;: 1.0, &#x27;bar_time&#x27;: &#x27;2026-11-02T11:09:00-05:00&#x27;, &#x27;side&#x27;: &#x27;call&#x27;, &#x27;strength&#x27;: 1.2403163241694326}</li></ul>
+<h3>Engine log (tail)</h3><pre>2026-11-02 11:10:07 EST INFO skip AMD261104P00487500: volume 57.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261104P00482500: volume 61.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261104P00477500: volume 65.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261104P00475000: volume 91.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261104P00472500: volume 31.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261104P00470000: volume 97.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261106P00482500: volume 86.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261106P00477500: volume 91.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261106P00472500: volume 89.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00492500: volume 4.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00490000: volume 18.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00487500: volume 2.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00485000: volume 2.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00480000: volume 14.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00475000: OI 84.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00472500: volume 14.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261109P00470000: volume 2.0 &lt; 100
+2026-11-02 11:10:07 EST INFO skip AMD261102P00492500 ask 3.10: cost $310.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00490000 ask 2.15: cost $215.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00487500 ask 1.48: cost $148.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00485000 ask 1.00: cost $100.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00482500 ask 0.69: cost $69.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00480000 ask 0.44: cost $44.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00477500 ask 0.30: cost $30.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261102P00475000 ask 0.20: cost $20.04 &gt; 40% cap $11.51
+2026-11-02 11:10:07 EST INFO skip AMD261104P00490000 ask 18.35: cost $1835.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261104P00485000 ask 16.05: cost $1605.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261104P00480000 ask 13.45: cost $1345.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00492500 ask 22.40: cost $2240.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00490000 ask 21.00: cost $2100.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00487500 ask 20.00: cost $2000.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00485000 ask 18.60: cost $1860.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00480000 ask 16.50: cost $1650.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00475000 ask 14.50: cost $1450.04 &gt; cash $28.78
+2026-11-02 11:10:07 EST INFO skip AMD261106P00470000 ask 12.90: cost $1290.04 &gt; cash $28.78
+2026-11-02 11:10:08 EST INFO skip SOFI261106C00018000 ask 0.22: cost $22.04 &gt; 40% cap $11.51
+2026-11-02 11:10:09 EST INFO PAPER BUY F261106C00013000 @ ask 0.06 (bid 0.05) fees $0.04 total cost $6.04 | F +1.09% from open, last 12.54 vs VWAP 12.4896 EMA20 12.516 (bar 2026-11-02T11:10:00-05:00) | cash now $22.74 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-02 11:10:09 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-02 11:11:39 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-02 11:13:09 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 </pre>
 <p>Fee source: https://cdn.robinhood.com/assets/robinhood/legal/RHF+Fee+Schedule.pdf , https://robinhood.com/us/en/support/articles/trading-fees-on-robinhood/</p>
 </body></html>
