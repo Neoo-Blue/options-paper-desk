@@ -198,3 +198,6 @@ hint: Up
 2026-11-02 11:10:09 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-02 11:11:39 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-02 11:13:09 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-02 11:13:11 EST INFO runner: pushed state 2026-11-02 11:13 ET: cash $22.74, open 1
+2026-11-02 11:14:42 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-02 11:16:12 EST INFO tick equity $27.69 cash $22.74 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
