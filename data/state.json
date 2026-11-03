@@ -2,7 +2,7 @@
  "version": 1,
  "created": "2026-10-28T01:22:42.639341-04:00",
  "start_cash": 50.0,
- "cash": 25.69,
+ "cash": 23.6,
  "positions": [],
  "trades": [
   {
@@ -211,6 +211,59 @@
    "entry_cost": 6.04,
    "entry_time": "2026-11-02T11:10:03.707923-05:00",
    "reason": "stop loss -51%"
+  },
+  {
+   "id": 5,
+   "time": "2026-11-03T10:17:43.240134-05:00",
+   "action": "BUY",
+   "symbol": "IWM261103C00284000",
+   "underlying": "IWM",
+   "kind": "call",
+   "strike": 284.0,
+   "expiry": "2026-11-03",
+   "qty": 1,
+   "price": 0.07,
+   "fees": 0.04,
+   "fee_detail": {
+    "commission": 0.0,
+    "orf_occ": 0.04,
+    "cat": 0.0,
+    "total": 0.04
+   },
+   "cash_flow": -7.04,
+   "reason": "IWM +0.47% from open, last 281.14 vs VWAP 280.0967 EMA20 280.5408 (bar 2026-11-03T10:17:00-05:00)",
+   "quote": {
+    "bid": 0.06,
+    "ask": 0.07,
+    "volume": 5112.0,
+    "oi": 11555.0
+   }
+  },
+  {
+   "id": 5,
+   "time": "2026-11-03T10:19:15.184358-05:00",
+   "action": "SELL",
+   "symbol": "IWM261103C00284000",
+   "underlying": "IWM",
+   "kind": "call",
+   "strike": 284.0,
+   "expiry": "2026-11-03",
+   "qty": 1,
+   "price": 0.05,
+   "fees": 0.05,
+   "fee_detail": {
+    "commission": 0.0,
+    "orf_occ": 0.04,
+    "cat": 0.0,
+    "sec": 0.01,
+    "taf": 0.0,
+    "total": 0.05
+   },
+   "cash_flow": 4.95,
+   "pnl": -2.09,
+   "entry_cost": 7.04,
+   "entry_time": "2026-11-03T10:17:43.240134-05:00",
+   "reason": "full stop - liquidating"
   }
  ],
  "equity_history": [
@@ -1678,6 +1731,16 @@
    "t": "2026-11-03T10:16:10.538244-05:00",
    "equity": 25.69,
    "cash": 25.69
+  },
+  {
+   "t": "2026-11-03T10:17:43.240134-05:00",
+   "equity": 24.6,
+   "cash": 18.65
+  },
+  {
+   "t": "2026-11-03T10:19:15.184358-05:00",
+   "equity": 23.6,
+   "cash": 23.6
   }
  ],
  "daily": {
@@ -1699,44 +1762,70 @@
   },
   "2026-11-03": {
    "sod_equity": 28.69,
-   "last_equity": 25.69
+   "last_equity": 23.6
   }
  },
  "day": {
   "date": "2026-11-03",
   "sod_equity": 28.69,
-  "daily_cap_hit": false,
-  "entries": 0
+  "daily_cap_hit": true,
+  "entries": 1,
+  "daily_cap_reason": "equity $23.60 <= $24.39 (SOD $28.69 -15%) at 2026-11-03T10:19:15.184358-05:00"
  },
- "full_stop": false,
- "full_stop_reason": null,
+ "full_stop": true,
+ "full_stop_reason": "equity $24.60 <= $25.00 (50% of start) at 2026-11-03T10:17:43.240134-05:00",
  "last_exit": {
   "AMD": "2026-10-28T11:10:13.405548-04:00",
   "F": "2026-11-03T10:00:51.160707-05:00",
-  "PLTR": "2026-10-30T16:05:04.879323-04:00"
+  "PLTR": "2026-10-30T16:05:04.879323-04:00",
+  "IWM": "2026-11-03T10:19:15.184358-05:00"
  },
- "next_id": 5,
+ "next_id": 6,
  "status": {
-  "last_tick": "2026-11-03T10:16:10.538244-05:00",
+  "last_tick": "2026-11-03T10:19:15.184358-05:00",
   "market_open": true,
   "signals": [
    {
+    "ticker": "IWM",
+    "open": 279.84,
+    "last": 281.14,
+    "vwap": 280.0967,
+    "ema": 280.5408,
+    "move_pct": 0.465,
+    "threshold_pct": 0.4,
+    "bar_time": "2026-11-03T10:17:00-05:00",
+    "side": "call",
+    "strength": 1.1613943034943786
+   },
+   {
     "ticker": "AMD",
     "open": 480.03,
-    "last": 488.76,
-    "vwap": 485.4993,
-    "ema": 488.6361,
-    "move_pct": 1.819,
+    "last": 489.8,
+    "vwap": 485.5237,
+    "ema": 488.778,
+    "move_pct": 2.035,
     "threshold_pct": 1.0,
-    "bar_time": "2026-11-03T10:16:00-05:00",
+    "bar_time": "2026-11-03T10:17:00-05:00",
     "side": "call",
-    "strength": 1.8186386285291123
+    "strength": 2.0352871775757064
+   },
+   {
+    "ticker": "PLTR",
+    "open": 167.902,
+    "last": 170.7869,
+    "vwap": 169.4409,
+    "ema": 170.1182,
+    "move_pct": 1.718,
+    "threshold_pct": 1.0,
+    "bar_time": "2026-11-03T10:17:00-05:00",
+    "side": "call",
+    "strength": 1.7182065001306368
    }
   ],
-  "last_data_update": "2026-11-03T10:16:11.545768-05:00",
-  "entry_block": null,
-  "last_loop_wall": "2026-11-03T10:16:10.538244-05:00",
-  "last_loop_mono": 1910.430571954,
+  "last_data_update": "2026-11-03T10:19:15.336913-05:00",
+  "entry_block": "full stop active",
+  "last_loop_wall": "2026-11-03T10:19:15.184358-05:00",
+  "last_loop_mono": 2095.076686226,
   "pid": 2158,
   "quote_retry_n": 0,
   "last_requested_sleep": 90,
