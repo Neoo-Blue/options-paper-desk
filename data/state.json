@@ -2,33 +2,8 @@
  "version": 1,
  "created": "2026-10-28T01:22:42.639341-04:00",
  "start_cash": 50.0,
- "cash": 22.74,
- "positions": [
-  {
-   "id": 4,
-   "symbol": "F261106C00013000",
-   "underlying": "F",
-   "kind": "call",
-   "strike": 13.0,
-   "expiry": "2026-11-06",
-   "qty": 1,
-   "entry_price": 0.06,
-   "entry_fees": {
-    "commission": 0.0,
-    "orf_occ": 0.04,
-    "cat": 0.0,
-    "total": 0.04
-   },
-   "entry_cost": 6.04,
-   "entry_time": "2026-11-02T11:10:03.707923-05:00",
-   "entry_reason": "F +1.09% from open, last 12.54 vs VWAP 12.4896 EMA20 12.516 (bar 2026-11-02T11:10:00-05:00)",
-   "mark_bid": 0.04,
-   "mark_ask": 0.05,
-   "mark_time": "2026-11-03T09:57:48.549213-05:00",
-   "quote_ok": true,
-   "fetch_failures": 0
-  }
- ],
+ "cash": 25.69,
+ "positions": [],
  "trades": [
   {
    "id": 1,
@@ -210,6 +185,32 @@
     "volume": 13010.0,
     "oi": 7182.0
    }
+  },
+  {
+   "id": 4,
+   "time": "2026-11-03T10:00:51.160707-05:00",
+   "action": "SELL",
+   "symbol": "F261106C00013000",
+   "underlying": "F",
+   "kind": "call",
+   "strike": 13.0,
+   "expiry": "2026-11-06",
+   "qty": 1,
+   "price": 0.03,
+   "fees": 0.05,
+   "fee_detail": {
+    "commission": 0.0,
+    "orf_occ": 0.04,
+    "cat": 0.0,
+    "sec": 0.01,
+    "taf": 0.0,
+    "total": 0.05
+   },
+   "cash_flow": 2.95,
+   "pnl": -3.09,
+   "entry_cost": 6.04,
+   "entry_time": "2026-11-02T11:10:03.707923-05:00",
+   "reason": "stop loss -51%"
   }
  ],
  "equity_history": [
@@ -1617,6 +1618,16 @@
    "t": "2026-11-03T09:57:48.549213-05:00",
    "equity": 26.69,
    "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:59:21.046748-05:00",
+   "equity": 26.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T10:00:51.160707-05:00",
+   "equity": 25.69,
+   "cash": 25.69
   }
  ],
  "daily": {
@@ -1638,7 +1649,7 @@
   },
   "2026-11-03": {
    "sod_equity": 28.69,
-   "last_equity": 26.69
+   "last_equity": 25.69
   }
  },
  "day": {
@@ -1651,67 +1662,31 @@
  "full_stop_reason": null,
  "last_exit": {
   "AMD": "2026-10-28T11:10:13.405548-04:00",
-  "F": "2026-10-30T10:17:04.403958-04:00",
+  "F": "2026-11-03T10:00:51.160707-05:00",
   "PLTR": "2026-10-30T16:05:04.879323-04:00"
  },
  "next_id": 5,
  "status": {
-  "last_tick": "2026-11-03T09:57:48.549213-05:00",
+  "last_tick": "2026-11-03T10:00:51.160707-05:00",
   "market_open": true,
   "signals": [
    {
-    "ticker": "AMD",
-    "open": 510.65,
-    "last": 492.51,
-    "vwap": 504.4785,
-    "ema": 494.9103,
-    "move_pct": -3.552,
+    "ticker": "PLTR",
+    "open": 167.902,
+    "last": 170.185,
+    "vwap": 169.3969,
+    "ema": 169.8922,
+    "move_pct": 1.36,
     "threshold_pct": 1.0,
-    "bar_time": "2026-11-02T11:10:00-05:00",
-    "side": "put",
-    "strength": 3.552332193807206
-   },
-   {
-    "ticker": "SOFI",
-    "open": 16.9775,
-    "last": 17.52,
-    "vwap": 17.3052,
-    "ema": 17.499,
-    "move_pct": 3.195,
-    "threshold_pct": 1.0,
-    "bar_time": "2026-11-02T11:10:00-05:00",
+    "bar_time": "2026-11-03T10:00:00-05:00",
     "side": "call",
-    "strength": 3.1954028153823755
-   },
-   {
-    "ticker": "F",
-    "open": 12.405,
-    "last": 12.54,
-    "vwap": 12.4896,
-    "ema": 12.516,
-    "move_pct": 1.088,
-    "threshold_pct": 1.0,
-    "bar_time": "2026-11-02T11:10:00-05:00",
-    "side": "call",
-    "strength": 1.0882727270281167
-   },
-   {
-    "ticker": "NIO",
-    "open": 3.225,
-    "last": 3.265,
-    "vwap": 3.2482,
-    "ema": 3.2603,
-    "move_pct": 1.24,
-    "threshold_pct": 1.0,
-    "bar_time": "2026-11-02T11:09:00-05:00",
-    "side": "call",
-    "strength": 1.2403163241694326
+    "strength": 1.3597246361994442
    }
   ],
-  "last_data_update": "2026-11-03T09:57:48.657755-05:00",
+  "last_data_update": "2026-11-03T10:00:52.685655-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-03T09:57:48.549213-05:00",
-  "last_loop_mono": 808.441541154,
+  "last_loop_wall": "2026-11-03T10:00:51.160707-05:00",
+  "last_loop_mono": 991.053035747,
   "pid": 2158,
   "quote_retry_n": 0,
   "last_requested_sleep": 90,

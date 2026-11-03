@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-03T09:57:48.661908-05:00",
+ "generated": "2026-11-03T10:00:52.689878-05:00",
  "label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
  "stats": {
-  "equity": 26.69,
-  "cash": 22.74,
-  "pnl": -23.31,
-  "pnl_pct": -46.62,
-  "closed": 3,
+  "equity": 25.69,
+  "cash": 25.69,
+  "pnl": -24.31,
+  "pnl_pct": -48.62,
+  "closed": 4,
   "wins": 0,
   "win_rate": 0.0,
-  "realized": -21.22,
-  "fees": 0.26,
-  "max_dd": 23.31,
-  "max_dd_pct": 46.62
+  "realized": -24.31,
+  "fees": 0.31,
+  "max_dd": 24.31,
+  "max_dd_pct": 48.62
  }
 }
