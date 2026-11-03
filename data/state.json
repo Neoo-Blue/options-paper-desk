@@ -22,12 +22,11 @@
    "entry_cost": 6.04,
    "entry_time": "2026-11-02T11:10:03.707923-05:00",
    "entry_reason": "F +1.09% from open, last 12.54 vs VWAP 12.4896 EMA20 12.516 (bar 2026-11-02T11:10:00-05:00)",
-   "mark_bid": 0.06,
-   "mark_ask": 0.07,
-   "mark_time": "2026-11-02T15:58:57.856891-05:00",
-   "quote_ok": false,
-   "fetch_failures": 9,
-   "stale_since": "2026-11-02T15:58:57.856891-05:00"
+   "mark_bid": 0.04,
+   "mark_ask": 0.06,
+   "mark_time": "2026-11-03T09:51:44.255723-05:00",
+   "quote_ok": true,
+   "fetch_failures": 0
   }
  ],
  "trades": [
@@ -1563,6 +1562,41 @@
    "t": "2026-11-03T09:47:26.450362-05:00",
    "equity": 28.69,
    "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:47:43.477441-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:47:58.628976-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:48:13.758037-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:48:28.904935-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:48:44.025195-05:00",
+   "equity": 26.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:50:14.134014-05:00",
+   "equity": 26.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:51:44.255723-05:00",
+   "equity": 26.69,
+   "cash": 22.74
   }
  ],
  "daily": {
@@ -1584,7 +1618,7 @@
   },
   "2026-11-03": {
    "sod_equity": 28.69,
-   "last_equity": 28.69
+   "last_equity": 26.69
   }
  },
  "day": {
@@ -1602,7 +1636,7 @@
  },
  "next_id": 5,
  "status": {
-  "last_tick": "2026-11-03T09:47:26.450362-05:00",
+  "last_tick": "2026-11-03T09:51:44.255723-05:00",
   "market_open": true,
   "signals": [
    {
@@ -1654,13 +1688,13 @@
     "strength": 1.2403163241694326
    }
   ],
-  "last_data_update": "2026-11-03T09:47:26.562448-05:00",
+  "last_data_update": "2026-11-03T09:51:44.362253-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-03T09:47:26.450362-05:00",
-  "last_loop_mono": 186.342690091,
+  "last_loop_wall": "2026-11-03T09:51:44.255723-05:00",
+  "last_loop_mono": 444.14805119,
   "pid": 2158,
-  "quote_retry_n": 8,
-  "last_requested_sleep": 15,
+  "quote_retry_n": 0,
+  "last_requested_sleep": 90,
   "proc_id": "5a0329ef02ba"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
@@ -1827,6 +1861,14 @@
    "failures": 8,
    "ended_by": "position sell (daily loss cap - liquidating)",
    "reconstructed_from_log": true
+  },
+  {
+   "symbol": "F261106C00013000",
+   "start": "2026-11-02T15:58:57.856891-05:00",
+   "end": "2026-11-03T09:48:44.025195-05:00",
+   "seconds": 64186,
+   "failures": 13,
+   "ended_by": "quote recovered"
   }
  ]
 }
