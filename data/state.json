@@ -2897,7 +2897,7 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-03T16:05:52.341440-05:00",
+  "last_tick": "2026-11-03T16:10:54.121708-05:00",
   "market_open": false,
   "signals": [
    {
@@ -2939,8 +2939,8 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-03T16:05:52.341440-05:00",
-  "last_loop_mono": 2423.416757826,
+  "last_loop_wall": "2026-11-03T16:10:54.121708-05:00",
+  "last_loop_mono": 2725.197026306,
   "pid": 2182,
   "quote_retry_n": 0,
   "last_requested_sleep": 300,
