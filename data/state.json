@@ -25,8 +25,9 @@
    "mark_bid": 0.06,
    "mark_ask": 0.07,
    "mark_time": "2026-11-02T15:58:57.856891-05:00",
-   "quote_ok": true,
-   "fetch_failures": 0
+   "quote_ok": false,
+   "fetch_failures": 9,
+   "stale_since": "2026-11-02T15:58:57.856891-05:00"
   }
  ],
  "trades": [
@@ -1517,6 +1518,51 @@
    "t": "2026-11-02T15:58:57.856891-05:00",
    "equity": 28.69,
    "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:45:33.326981-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:45:43.559423-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:45:55.687179-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:46:10.808383-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:46:25.922643-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:46:41.039603-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:46:56.165966-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:47:11.326207-05:00",
+   "equity": 28.69,
+   "cash": 22.74
+  },
+  {
+   "t": "2026-11-03T09:47:26.450362-05:00",
+   "equity": 28.69,
+   "cash": 22.74
   }
  ],
  "daily": {
@@ -1535,13 +1581,17 @@
   "2026-11-02": {
    "sod_equity": 28.78,
    "last_equity": 28.69
+  },
+  "2026-11-03": {
+   "sod_equity": 28.69,
+   "last_equity": 28.69
   }
  },
  "day": {
-  "date": "2026-11-02",
-  "sod_equity": 28.78,
+  "date": "2026-11-03",
+  "sod_equity": 28.69,
   "daily_cap_hit": false,
-  "entries": 1
+  "entries": 0
  },
  "full_stop": false,
  "full_stop_reason": null,
@@ -1552,8 +1602,8 @@
  },
  "next_id": 5,
  "status": {
-  "last_tick": "2026-11-02T21:58:17.423819-05:00",
-  "market_open": false,
+  "last_tick": "2026-11-03T09:47:26.450362-05:00",
+  "market_open": true,
   "signals": [
    {
     "ticker": "AMD",
@@ -1604,14 +1654,14 @@
     "strength": 1.2403163241694326
    }
   ],
-  "last_data_update": "2026-11-02T15:58:58.143943-05:00",
+  "last_data_update": "2026-11-03T09:47:26.562448-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-02T21:58:17.423819-05:00",
-  "last_loop_mono": 35.016651135,
-  "pid": 2159,
-  "quote_retry_n": 0,
-  "last_requested_sleep": 300,
-  "proc_id": "9d5102664540"
+  "last_loop_wall": "2026-11-03T09:47:26.450362-05:00",
+  "last_loop_mono": 186.342690091,
+  "pid": 2158,
+  "quote_retry_n": 8,
+  "last_requested_sleep": 15,
+  "proc_id": "5a0329ef02ba"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
  "missed_checks": [
@@ -1755,6 +1805,17 @@
    "expected_s": 300,
    "monotonic_s": null,
    "open_positions": []
+  },
+  {
+   "start": "2026-11-02T21:58:17.423819-05:00",
+   "end": "2026-11-03T09:45:33.326981-05:00",
+   "seconds": 42436,
+   "market_seconds": 933,
+   "expected_s": 300,
+   "monotonic_s": null,
+   "open_positions": [
+    "F261106C00013000"
+   ]
   }
  ],
  "stale_periods": [

@@ -508,3 +508,33 @@ hint: Updates we
 2026-11-02 21:58:17 EST INFO runner: synced checkout to origin/main 7bf25b5
 2026-11-02 21:58:17 EST INFO runner start (PAPER ONLY, GitHub Actions). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $22.74, positions 1, full_stop=False; outside session window: one iteration then exit
 2026-11-02 21:58:17 EST INFO runner exit: cash $22.74, positions 1
+2026-11-03 09:45:32 EST INFO runner: synced checkout to origin/main dc3262a
+2026-11-03 09:45:33 EST INFO runner start (PAPER ONLY, GitHub Actions). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $22.74, positions 1, full_stop=False; running until 2026-11-03 15:25 ET
+2026-11-03 09:45:33 EST WARNING MISSED CHECKS: no engine iteration from 2026-11-02 21:58:17 ET to 2026-11-03 09:45:33 ET (42436s wall, 933s of market time, expected <= 390s; monotonic None s; open positions: ['F261106C00013000']). Box/process likely paused.
+2026-11-03 09:45:33 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #1); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:45:33 EST INFO New trading day 2026-11-03, start-of-day equity $28.69
+2026-11-03 09:45:33 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:45:33 EST INFO open position quote not fresh; fast retry in 10s (attempt 1)
+2026-11-03 09:45:43 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #2); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:45:43 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:45:43 EST INFO open position quote not fresh; fast retry in 12s (attempt 2)
+2026-11-03 09:45:55 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #3); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:45:55 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:45:55 EST INFO open position quote not fresh; fast retry in 15s (attempt 3)
+2026-11-03 09:46:10 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #4); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:46:10 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:46:10 EST INFO open position quote not fresh; fast retry in 15s (attempt 4)
+2026-11-03 09:46:26 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #5); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:46:26 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:46:26 EST INFO open position quote not fresh; fast retry in 15s (attempt 5)
+2026-11-03 09:46:41 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #6); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:46:41 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:46:41 EST INFO open position quote not fresh; fast retry in 15s (attempt 6)
+2026-11-03 09:46:56 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #7); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:46:56 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:46:56 EST INFO open position quote not fresh; fast retry in 15s (attempt 7)
+2026-11-03 09:47:11 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #8); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:47:11 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 09:47:11 EST INFO open position quote not fresh; fast retry in 15s (attempt 8)
+2026-11-03 09:47:26 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #9); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
+2026-11-03 09:47:26 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
