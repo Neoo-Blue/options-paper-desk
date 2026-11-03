@@ -892,3 +892,6 @@ hint: Updates we
 2026-11-03 10:19:15 EST WARNING DAILY LOSS CAP hit: equity $23.60 <= $24.39 (SOD $28.69 -15%) at 2026-11-03T10:19:15.184358-05:00
 2026-11-03 10:19:15 EST INFO PAPER SELL IWM261103C00284000 @ 0.0500 fees $0.05 proceeds $4.95 P&L $-2.09 | full stop - liquidating | cash now $23.60
 2026-11-03 10:19:15 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 10:19:16 EST INFO runner: pushed state 2026-11-03 10:19 ET: cash $23.60, open 0
+2026-11-03 10:20:46 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-03 10:22:16 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
