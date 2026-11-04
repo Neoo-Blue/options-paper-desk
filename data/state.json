@@ -2945,8 +2945,8 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-04T15:59:27.948234-05:00",
-  "market_open": true,
+  "last_tick": "2026-11-04T16:05:59.038173-05:00",
+  "market_open": false,
   "signals": [
    {
     "ticker": "IWM",
@@ -2987,11 +2987,11 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-04T15:59:27.948234-05:00",
-  "last_loop_mono": 1246.56443009,
+  "last_loop_wall": "2026-11-04T16:05:59.038173-05:00",
+  "last_loop_mono": 1637.654368853,
   "pid": 2517,
   "quote_retry_n": 0,
-  "last_requested_sleep": 90,
+  "last_requested_sleep": 300,
   "proc_id": "4da2fb7fc2ca"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
