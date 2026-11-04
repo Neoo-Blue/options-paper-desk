@@ -2861,6 +2861,16 @@
    "t": "2026-11-04T15:47:22.797206-05:00",
    "equity": 23.6,
    "cash": 23.6
+  },
+  {
+   "t": "2026-11-04T15:48:54.270267-05:00",
+   "equity": 23.6,
+   "cash": 23.6
+  },
+  {
+   "t": "2026-11-04T15:50:24.278832-05:00",
+   "equity": 23.6,
+   "cash": 23.6
   }
  ],
  "daily": {
@@ -2905,7 +2915,7 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-04T15:47:22.797206-05:00",
+  "last_tick": "2026-11-04T15:50:24.278832-05:00",
   "market_open": true,
   "signals": [
    {
@@ -2947,11 +2957,11 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-04T15:47:22.797206-05:00",
-  "last_loop_mono": 521.413401722,
+  "last_loop_wall": "2026-11-04T15:50:24.278832-05:00",
+  "last_loop_mono": 702.89502794,
   "pid": 2517,
   "quote_retry_n": 0,
-  "last_requested_sleep": 300,
+  "last_requested_sleep": 90,
   "proc_id": "4da2fb7fc2ca"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
