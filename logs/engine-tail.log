@@ -1,6 +1,3 @@
-2026-10-30 07:17:06,098 INFO New trading day 2026-10-30, start-of-day equity $36.82
-2026-10-30 07:17:06,100 INFO PAPER SELL F261030C00012500 @ 0.0200 fees $0.05 proceeds $1.95 P&L $-3.09 | stop loss -61% | cash now $36.82
-2026-10-30 07:17:07,975 INFO skip PLTR261030P00185000 ask 0.42: cost $42.04 > cash $36.82
 2026-10-30 07:17:07,975 INFO skip PLTR261030P00182500 ask 0.17: cost $17.04 > 40% cap $14.73
 2026-10-30 07:17:07,976 INFO PAPER BUY PLTR261030P00180000 @ ask 0.08 (bid 0.07) fees $0.04 total cost $8.04 | PLTR -3.39% from open, last 187.19 vs VWAP 189.4919 EMA20 188.2931 (bar 2026-10-30T10:17:00-04:00) | cash now $28.78 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-30 07:17:08,000 INFO tick equity $35.73 cash $28.78 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-05 15:00:51 EST INFO runner: pushed state 2026-11-05 15:00 ET: cash $23.60, open 0
 2026-11-05 15:02:21 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-05 15:03:51 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 15:03:52 EST INFO runner: pushed state 2026-11-05 15:03 ET: cash $23.60, open 0
+2026-11-05 15:05:22 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 15:06:52 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
