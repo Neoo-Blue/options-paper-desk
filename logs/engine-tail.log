@@ -1,6 +1,3 @@
-2026-10-29 07:30:29,137 INFO PAPER BUY F261030C00012500 @ ask 0.05 (bid 0.04) fees $0.04 total cost $5.04 | F +3.40% from open, last 12.1699 vs VWAP 12.0181 EMA20 12.1431 (bar 2026-10-29T10:30:00-04:00) | cash now $34.87 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-29 07:30:29,141 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-29 07:31:59,375 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-29 07:33:29,584 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-29 12:41:51,874 WARNING MISSED CHECKS: no engine iteration from 2026-10-29 10:33:29 ET to 2026-10-29 15:41:51 ET (18502s wall, 18502s of market time, expected <= 180s; monotonic 85.4 s; open positions: ['F261030C00012500']). Box/process likely paused.
 2026-10-29 12:41:55,937 INFO tick equity $38.82 cash $34.87 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-05 14:48:44 EST INFO runner: pushed state 2026-11-05 14:48 ET: cash $23.60, open 0
 2026-11-05 14:50:14 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-05 14:51:44 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 14:51:46 EST INFO runner: pushed state 2026-11-05 14:51 ET: cash $23.60, open 0
+2026-11-05 14:53:16 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 14:54:46 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
