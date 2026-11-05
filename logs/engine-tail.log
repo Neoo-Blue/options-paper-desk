@@ -1,6 +1,3 @@
-2026-10-28 07:26:12,136 INFO skip AMD261028P00550000 ask 0.80: cost $80.04 > cash $50.00
-2026-10-28 07:26:12,136 INFO skip AMD261028P00547500 ask 0.61: cost $61.04 > cash $50.00
-2026-10-28 07:26:12,136 INFO skip AMD261028P00545000 ask 0.37: cost $37.04 > 40% cap $20.00
 2026-10-28 07:26:12,136 INFO skip AMD261028P00542500 ask 0.33: cost $33.04 > 40% cap $20.00
 2026-10-28 07:26:12,136 INFO skip AMD261028P00540000 ask 0.23: cost $23.04 > 40% cap $20.00
 2026-10-28 07:26:12,136 INFO PAPER BUY AMD261028P00537500 @ ask 0.17 (bid 0.13) fees $0.04 total cost $17.04 | AMD -1.77% from open, last 562.38 vs VWAP 564.4062 EMA20 562.385 (bar 2026-10-28T10:26:00-04:00) | cash now $32.96 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-05 13:30:03 EST INFO runner: pushed state 2026-11-05 13:30 ET: cash $23.60, open 0
 2026-11-05 13:31:33 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-05 13:33:03 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 13:33:04 EST INFO runner: pushed state 2026-11-05 13:33 ET: cash $23.60, open 0
+2026-11-05 13:34:34 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 13:36:04 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
