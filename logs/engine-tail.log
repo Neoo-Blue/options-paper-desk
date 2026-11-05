@@ -1,6 +1,3 @@
-2026-10-28 11:12:29,742 INFO tick equity $39.91 cash $39.91 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-28 11:27:15,192 INFO tick equity $39.91 cash $39.91 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-28 11:28:45,198 INFO tick equity $39.91 cash $39.91 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-28 11:30:15,201 INFO tick equity $39.91 cash $39.91 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-28 11:31:45,204 INFO tick equity $39.91 cash $39.91 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-28 13:23:07,263 INFO engine start (PAPER ONLY). Quotes delayed ~15 min (Yahoo Finance via yfinance). cash $39.91, positions 0, full_stop=False
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-05 14:36:38 EST INFO runner: pushed state 2026-11-05 14:36 ET: cash $23.60, open 0
 2026-11-05 14:38:08 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-05 14:39:38 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 14:39:40 EST INFO runner: pushed state 2026-11-05 14:39 ET: cash $23.60, open 0
+2026-11-05 14:41:10 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 14:42:40 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
