@@ -1,6 +1,3 @@
-2026-10-28 08:02:43,384 INFO tick equity $45.91 cash $32.96 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-10-28 08:04:43,390 WARNING quote fetch error AMD261028P00537500: Failed to perform, curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
-2026-10-28 08:04:43,390 WARNING no quote for open position AMD261028P00537500 (bid=None ask=None); keeping last real mark from 2026-10-28T10:26:09.142951-04:00
 2026-10-28 08:04:43,393 INFO tick equity $45.91 cash $32.96 open=1 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-10-28 08:06:43,397 WARNING quote fetch error AMD261028P00537500: Failed to perform, curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
 2026-10-28 08:06:43,398 WARNING no quote for open position AMD261028P00537500 (bid=None ask=None); keeping last real mark from 2026-10-28T10:26:09.142951-04:00
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-05 13:51:15 EST INFO runner: pushed state 2026-11-05 13:51 ET: cash $23.60, open 0
 2026-11-05 13:52:45 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-05 13:54:15 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 13:54:16 EST INFO runner: pushed state 2026-11-05 13:54 ET: cash $23.60, open 0
+2026-11-05 13:55:46 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-05 13:57:16 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
