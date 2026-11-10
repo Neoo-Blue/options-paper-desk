@@ -4328,7 +4328,7 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-09T19:39:45.633650-05:00",
+  "last_tick": "2026-11-09T22:40:04.444447-05:00",
   "market_open": false,
   "signals": [
    {
@@ -4370,12 +4370,12 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-09T19:39:45.633650-05:00",
-  "last_loop_mono": 39.166109366,
-  "pid": 2258,
+  "last_loop_wall": "2026-11-09T22:40:04.444447-05:00",
+  "last_loop_mono": 100.58007084,
+  "pid": 2351,
   "quote_retry_n": 0,
   "last_requested_sleep": 300,
-  "proc_id": "6e1c4aa8a481"
+  "proc_id": "798123925331"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
  "missed_checks": [
