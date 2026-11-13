@@ -4321,6 +4321,21 @@
    "t": "2026-11-10T15:58:54.676114-05:00",
    "equity": 23.6,
    "cash": 23.6
+  },
+  {
+   "t": "2026-11-13T15:52:05.513553-05:00",
+   "equity": 23.6,
+   "cash": 23.6
+  },
+  {
+   "t": "2026-11-13T15:53:35.524553-05:00",
+   "equity": 23.6,
+   "cash": 23.6
+  },
+  {
+   "t": "2026-11-13T15:55:05.533908-05:00",
+   "equity": 23.6,
+   "cash": 23.6
   }
  ],
  "daily": {
@@ -4359,10 +4374,14 @@
   "2026-11-10": {
    "sod_equity": 23.6,
    "last_equity": 23.6
+  },
+  "2026-11-13": {
+   "sod_equity": 23.6,
+   "last_equity": 23.6
   }
  },
  "day": {
-  "date": "2026-11-10",
+  "date": "2026-11-13",
   "sod_equity": 23.6,
   "daily_cap_hit": false,
   "entries": 0
@@ -4377,8 +4396,8 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-12T20:59:10.966724-05:00",
-  "market_open": false,
+  "last_tick": "2026-11-13T15:55:05.533908-05:00",
+  "market_open": true,
   "signals": [
    {
     "ticker": "IWM",
@@ -4419,12 +4438,12 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-12T20:59:10.966724-05:00",
-  "last_loop_mono": 63.728946663,
-  "pid": 2424,
+  "last_loop_wall": "2026-11-13T15:55:05.533908-05:00",
+  "last_loop_mono": 217.318866544,
+  "pid": 2260,
   "quote_retry_n": 0,
-  "last_requested_sleep": 300,
-  "proc_id": "64b11017f5d7"
+  "last_requested_sleep": 90,
+  "proc_id": "8589ec08fbb4"
  },
  "data_label": "Quotes delayed ~15 min (Yahoo Finance via yfinance)",
  "missed_checks": [
@@ -4639,6 +4658,15 @@
    "end": "2026-11-12T16:26:12.165097-05:00",
    "seconds": 68750,
    "market_seconds": 23400,
+   "expected_s": 300,
+   "monotonic_s": null,
+   "open_positions": []
+  },
+  {
+   "start": "2026-11-12T20:59:10.966724-05:00",
+   "end": "2026-11-13T15:52:05.513553-05:00",
+   "seconds": 67975,
+   "market_seconds": 22926,
    "expected_s": 300,
    "monotonic_s": null,
    "open_positions": []
