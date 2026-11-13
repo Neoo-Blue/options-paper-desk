@@ -4346,6 +4346,11 @@
    "t": "2026-11-13T15:58:07.057212-05:00",
    "equity": 23.6,
    "cash": 23.6
+  },
+  {
+   "t": "2026-11-13T15:59:38.338857-05:00",
+   "equity": 23.6,
+   "cash": 23.6
   }
  ],
  "daily": {
@@ -4406,8 +4411,8 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-13T15:58:07.057212-05:00",
-  "market_open": true,
+  "last_tick": "2026-11-13T16:01:08.347625-05:00",
+  "market_open": false,
   "signals": [
    {
     "ticker": "IWM",
@@ -4448,8 +4453,8 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-13T15:58:07.057212-05:00",
-  "last_loop_mono": 398.842170848,
+  "last_loop_wall": "2026-11-13T16:01:08.347625-05:00",
+  "last_loop_mono": 580.132583526,
   "pid": 2260,
   "quote_retry_n": 0,
   "last_requested_sleep": 90,
