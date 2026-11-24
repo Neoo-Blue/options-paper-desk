@@ -4411,7 +4411,7 @@
  },
  "next_id": 6,
  "status": {
-  "last_tick": "2026-11-24T01:43:47.638502-05:00",
+  "last_tick": "2026-11-24T01:48:49.194373-05:00",
   "market_open": false,
   "signals": [
    {
@@ -4453,8 +4453,8 @@
   ],
   "last_data_update": "2026-11-03T10:19:15.336913-05:00",
   "entry_block": null,
-  "last_loop_wall": "2026-11-24T01:43:47.638502-05:00",
-  "last_loop_mono": 4867.82329541,
+  "last_loop_wall": "2026-11-24T01:48:49.194373-05:00",
+  "last_loop_mono": 5169.379166655,
   "pid": 2491,
   "quote_retry_n": 0,
   "last_requested_sleep": 300,
