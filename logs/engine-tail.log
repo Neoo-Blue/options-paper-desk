@@ -1,6 +1,3 @@
-2026-11-03 09:45:43 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
-2026-11-03 09:45:43 EST INFO open position quote not fresh; fast retry in 12s (attempt 2)
-2026-11-03 09:45:55 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #3); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
 2026-11-03 09:45:55 EST INFO tick equity $28.69 cash $22.74 open=1 STALE QUOTE: ['F261106C00013000'] [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-03 09:45:55 EST INFO open position quote not fresh; fast retry in 15s (attempt 3)
 2026-11-03 09:46:10 EST WARNING no quote for open position F261106C00013000 (bid=0.0 ask=0.0; failure #4); keeping last real mark from 2026-11-02T15:58:57.856891-05:00
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-24 09:48:09 EST INFO runner: pushed state 2026-11-24 09:48 ET: cash $23.60, open 0
 2026-11-24 09:49:39 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-24 09:51:09 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-24 09:51:11 EST INFO runner: pushed state 2026-11-24 09:51 ET: cash $23.60, open 0
+2026-11-24 09:52:41 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-24 09:54:11 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
