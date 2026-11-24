@@ -1,6 +1,3 @@
-2026-11-03 10:17:45 EST INFO skip IWM261110C00285000: volume 27.0 < 100
-2026-11-03 10:17:45 EST INFO skip IWM261110C00286000: volume 1.0 < 100
-2026-11-03 10:17:45 EST INFO skip IWM261110C00287000: volume 3.0 < 100
 2026-11-03 10:17:45 EST INFO skip IWM261110C00290000: volume 22.0 < 100
 2026-11-03 10:17:45 EST INFO skip IWM261110C00292500: volume 47.0 < 100
 2026-11-03 10:17:45 EST INFO skip IWM261103C00282000 ask 0.25: cost $25.04 > 40% cap $10.28
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-24 15:49:12 EST INFO runner: pushed state 2026-11-24 15:49 ET: cash $23.60, open 0
 2026-11-24 15:50:42 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-24 15:52:12 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-24 15:52:13 EST INFO runner: pushed state 2026-11-24 15:52 ET: cash $23.60, open 0
+2026-11-24 15:53:43 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-24 15:55:13 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
