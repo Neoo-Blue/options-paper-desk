@@ -1,6 +1,3 @@
-2026-11-03 10:16:11 EST INFO skip AMD261104C00490000 ask 19.15: cost $1915.04 > cash $25.69
-2026-11-03 10:16:11 EST INFO skip AMD261104C00492500 ask 17.65: cost $1765.04 > cash $25.69
-2026-11-03 10:16:11 EST INFO skip AMD261104C00495000 ask 17.10: cost $1710.04 > cash $25.69
 2026-11-03 10:16:11 EST INFO skip AMD261104C00497500 ask 15.50: cost $1550.04 > cash $25.69
 2026-11-03 10:16:11 EST INFO skip AMD261104C00500000 ask 14.65: cost $1465.04 > cash $25.69
 2026-11-03 10:16:11 EST INFO skip AMD261104C00502500 ask 13.70: cost $1370.04 > cash $25.69
@@ -1498,3 +1495,6 @@ error: failed to push some refs to 'https://github.com/Neoo-Bl
 2026-11-24 14:27:34 EST INFO runner: pushed state 2026-11-24 14:27 ET: cash $23.60, open 0
 2026-11-24 14:29:04 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
 2026-11-24 14:30:34 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-24 14:30:35 EST INFO runner: pushed state 2026-11-24 14:30 ET: cash $23.60, open 0
+2026-11-24 14:32:05 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
+2026-11-24 14:33:35 EST INFO tick equity $23.60 cash $23.60 open=0 [Quotes delayed ~15 min (Yahoo Finance via yfinance)]
